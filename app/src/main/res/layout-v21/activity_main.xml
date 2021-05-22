@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/round2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/round"
+        android:id="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cowin_tracker"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/created_by_pushkar_raja"
+            android:textSize="12sp"
+            android:textColor="#E7EB90"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="16dp"
+        android:layout_below="@id/toolbar"
+        >
+    <EditText
+        android:id="@+id/getPincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_pincode"
+        android:layout_weight="2"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/blackk"
+        android:textColorHint="@color/blackk"
+        android:autofillHints="110018" />
+
+    <Button
+        android:id="@+id/getSlots"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/get_slots"
+        android:textColor="@color/white"
+        tools:targetApi="lollipop" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll1"
+        android:id="@+id/idRcenters"/>
+
+    <ProgressBar
+        android:id="@+id/Pbloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

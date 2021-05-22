@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CoWin Tracker</string>
+    <string name="enter_pincode">Enter Pincode</string>
+    <string name="get_slots">Get Slots</string>
+    <string name="center_name">Center Name</string>
+    <string name="cowin_tracker">CoWin Tracker</string>
+    <string name="created_by_pushkar_raja">Created by Pushkar Raja</string>
+</resources>

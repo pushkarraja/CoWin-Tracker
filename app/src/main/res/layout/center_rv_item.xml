@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    android:clipToPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ghost_white"
+        android:padding="12dp"
+        >
+        <TextView
+            android:id="@+id/center_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Name"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_hospital"
+            android:drawablePadding="4dp"
+            />
+        <TextView
+            android:id="@+id/Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center Location"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:layout_below="@id/center_name"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/Timings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timings"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:layout_below="@id/Location"
+            android:drawableLeft="@drawable/ic_timings"
+            android:drawablePadding="4dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:layout_below="@id/Timings"
+            android:id="@+id/llVaccine"
+            >
+        <TextView
+            android:id="@+id/Vaccine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vaccine Name"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:drawableLeft="@drawable/ic_vaccine"
+            android:drawablePadding="4dp"
+            />
+        <TextView
+            android:id="@+id/vaccineFees"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fees"
+            android:textAlignment="textStart"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_fees"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/llVaccine"
+            >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Age Limit"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:id="@+id/tvagelimit"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Dose1"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:id="@+id/tvSlots1" />
+
+        <TextView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:text="Dose2"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:id="@+id/tvSlots2" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
