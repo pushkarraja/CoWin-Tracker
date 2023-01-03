@@ -10,6 +10,8 @@
 
 Download the app here : https://github.com/pushkarraja/CoWin-Tracker/raw/master/app-release.apk
 <br>
+<br>
+<br>
 App Demo:
 <br>
 ![Preview](https://github.com/pushkarraja/CoWin-Tracker/blob/master/demo_vaccine.gif)
